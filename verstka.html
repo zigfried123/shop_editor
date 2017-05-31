@@ -1,0 +1,590 @@
+<style>
+
+    body {
+        width: 1280px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a{
+        cursor: pointer;
+    }
+
+    #header_line1 {
+        margin-top: 0px;
+        height: 96px;
+        border: 1px solid white;
+        width: 100%;
+    }
+
+    #header_img {
+        position: absolute;
+        top: 0px;
+        left: 15px;
+    }
+
+    #header_logotext {
+        margin-left: 210px;
+        margin-top: 20px;
+    }
+
+    #header_logotext p {
+        margin: 0px;
+    }
+
+    #header_logotext1 {
+        font-family: 'Tahoma';
+        font-weight: lighter;
+        font-size: 30px;
+    }
+
+    #header_logotext2 {
+        margin-top: 1px;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    #header_phone {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 405px;
+        height: 95px;
+    }
+
+    #header_phone div {
+        float: right;
+        position:absolute;
+        margin:0;
+    }
+
+    #header_phone #header_phone_img {
+        margin-top: 24px;
+        position:absolute;
+        right: 305px;
+    }
+
+    #header_phone_contact {
+        float: right;
+        top: 20px;
+        position:absolute;
+        right:0px;
+        font-weight: bold;
+    }
+
+    #header_phone_contact p {
+        margin: 0px;
+    }
+
+    #header_phone_contact p:nth-child(1) {
+        font-size: 36px;
+        font-weight: bolder;
+    }
+
+    #header_menu {
+        margin-top: 0px;
+        width: 100%;
+        height: 96px;
+        background: orange;
+        color: white;
+    }
+
+    #header_menu li{
+        list-style-type:none;
+        font-size: 18px;
+
+    }
+
+    #header_menu #topmenu{
+        margin:0;
+    }
+
+    #header_menu #topmenu>li {
+        float: left;
+        padding-top: 20px;
+    }
+
+    #header_menu li a ul{
+        position:absolute;
+        display:none;
+        width:200px;
+        margin-top: -3px;
+        opacity:0.7;
+        background:black;
+        list-style-type:none;
+        padding:0;
+    }
+
+    #header_menu li a ul li{
+        height:30px;
+    }
+
+    #header_menu li a:hover>ul{
+        display: block;
+    }
+
+    #header_menu li a ul li:hover{
+        background: gray;
+    }
+
+    #header_menu li a ul li ul{
+        display:none;
+        position:absolute;
+        width:200px;
+        background:black;
+        margin-left:-200px;
+        margin-top:-21px;
+    }
+
+    #header_menu li a ul li:hover ul{
+        display: block;
+    }
+
+    #header_menu #topmenu>li:nth-child(1) {
+        margin-left: 260px;
+    }
+
+    #header_menu #topmenu>li:nth-child(2) {
+        margin-left: 105px;
+    }
+
+    #header_menu #topmenu>li:nth-child(3) {
+        margin-left: 105px;
+    }
+
+    #header_menu li:nth-child(4) {
+        margin-left: 85px;
+    }
+
+    #header_menu li:nth-child(5) {
+        clear: left;
+        margin-left: 275px;
+    }
+
+    #header_menu li:nth-child(6) {
+        margin-left: 80px;
+    }
+
+    #header_menu li:nth-child(7) {
+        margin-left: 80px;
+    }
+
+    #header_menu li:nth-child(8) {
+        margin-left: 80px;
+    }
+
+    #button_buy{
+        width:160px;
+        height:70px;
+        background:#0162AF;
+        position:absolute;
+        top:260px;
+        right:10px;
+        border:none;
+        border-radius:5px;
+        color:white;
+        font-size:30px;
+        cursor:pointer;
+    }
+
+    #description div {
+        float: left;
+    }
+
+    #description p {
+        font-size: 18px;
+        line-height: 19px;
+    }
+
+    #description_img {
+        width: 270px;
+        height: 360px;
+        border: 1px solid gray;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    #description_img div:nth-child(1){
+        margin-left: 38px;
+        margin-top:50px;
+    }
+
+    #description_img div:nth-child(2){
+        margin-top:65px;
+    }
+    #description_img div:nth-child(3){
+        margin-top:65px;
+    }
+
+    #description_img div:nth-child(2){
+        margin-left:55px;
+    }
+    #description_img div:nth-child(3){
+        margin-left: 13px;
+    }
+
+
+
+    #description_chars {
+        width: 370px;
+        height: 465px;
+        margin-left: 25px;
+    }
+
+    #description_chars p {
+        line-height: 15px;
+    }
+
+    #description_chars h1 {
+        text-align: center;
+    }
+
+    #description_chars-bolder {
+        margin-top: 190px;
+        font-weight: bold;
+    }
+
+    #description_main {
+        width: 370px;
+        height: 420px;
+        margin-left: 0px;
+    }
+
+    #description_main {
+        padding-top: 140px;
+        margin-left:10px;
+    }
+
+
+    #description_main p:nth-child(1) {
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    #chars{
+        clear:left;
+        font-size:17px;
+    }
+
+    #chars p span:nth-child(1){
+        letter-spacing:5px;
+        font-size:20px;
+    }
+
+    #chars p span:nth-child(2){
+        float:right;
+    }
+
+
+    #chars div {
+        float: left;
+        width: 370px;
+    }
+
+    #chars-left p {
+        margin-left: 5px;
+    }
+
+    #chars-right {
+        margin-left: 50px;
+    }
+
+    #recalls {
+        padding-top: 10px;
+        clear: left;
+        padding-left: 5px;
+    }
+
+    #recalls h2{
+        padding-top: 50px;
+    }
+
+    #recalls #form_recall button{
+        background: #0061AE;
+        border-radius: 5px;
+        color: white;
+        border: 1px solid orange;
+        width:165px;
+        height:35px;
+        cursor: pointer;
+    }
+
+    #recalls #form_recall input{
+        height:28px;
+        width:250px;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome, Opera и т.д. */
+        font-size:19px;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        font-size:19px;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+        font-size:19px;
+    }
+    :-ms-input-placeholder { /* IE 10 */
+        font-size:19px;
+    }
+
+    #recalls #form_recall textarea{
+        width:1000px;
+    }
+
+
+
+    @media screen and (max-width: 1024px) {
+
+        #button_buy{
+            margin-top:-96px;
+        }
+
+        #header_img {
+            display:none;
+        }
+        #header_menu{
+            display:none;
+        }
+        #description_chars {
+            width:300px;
+            height:500px;
+        }
+        #description_main {
+            width:300px;
+            height:500px;
+        }
+        #recalls p{
+            width:900px;
+        }
+
+        #recalls #form_recall textarea{
+            width:900px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        #header_img {
+            display:none;
+        }
+
+        #header_menu{
+            display:none;
+        }
+
+        #description_chars p{
+            font-size:14px;
+        }
+
+        #description_main p{
+            font-size:14px;
+        }
+
+        #description_chars {
+            width:200px;
+            height:550px;
+        }
+        #description_main {
+            width:200px;
+            height:550px;
+        }
+        #recalls p{
+            width:700px;
+        }
+
+        #recalls #form_recall textarea{
+            width:650px;
+        }
+
+        #header_logotext1 {
+            font-size:25px;
+        }
+        #header_logotext2{
+            font-size:8px;
+        }
+
+        #header_phone_contact{
+
+        }
+
+        #header_phone_contact p:nth-child(1) {
+            font-size:20px;
+        }
+        #header_phone_contact p:nth-child(2) {
+            font-size:10px;
+        }
+        #header_phone #header_phone_img {
+
+           right:170px;
+        }
+        #header_phone #header_phone_img img{
+            width:30px;
+            height:30px;
+        }
+
+        #chars p,li{
+            font-size:14px;
+        }
+
+        #recalls p{
+            font-size:14px;
+        }
+
+        #chars div {
+            width: 300px;
+        }
+
+        #chars p span:nth-child(1){
+            letter-spacing:4px;
+            font-size:12px;
+        }
+
+
+    }
+
+
+</style>
+
+<div>
+
+    <div id="header">
+        <div id="header_line1">
+            <div id="header_img">
+                <img src="/img/img1.jpg">
+            </div>
+            <div id="header_logotext">
+                <p id="header_logotext1">NOTEBOOKERS</p>
+                <p id="header_logotext2">ИНТЕРНЕТ-МАГАЗИН НОУТБУКОВ</p>
+            </div>
+
+            <div id="header_phone">
+                <div id="header_phone_img"><img src="/img/phone.jpg"></div>
+                <div id="header_phone_contact">
+                    <p>+ 7(999) 999-99-99</p>
+                    <p>Ждем вашего звонка с 10:00 до 23:00</p>
+                </div>
+            </div>
+        </div>
+        <div id="header_menu">
+            <ul id="topmenu">
+                <li><a>Apple<ul class="bottommenu"><li>111<ul><li>444</li><li>555</li><li>666</li></ul></li><li>222<ul><li>444</li><li>555</li><li>666</li></ul></li><li>333<ul><li>444</li><li>555</li><li>666</li></ul></li></ul></a></li>
+            <li><a>Игровые<ul><li>111<ul><li>444</li><li>555</li><li>666</li></ul></li><li>222<ul><li>444</li><li>555</li><li>666</li></ul></li><li>333<ul><li>444</li><li>555</li><li>666</li></ul></li></ul></a></li>
+            <li><a>Ультрабуки<ul><li>111<ul><li>444</li><li>555</li><li>666</li></ul></li><li>222<ul><li>444</li><li>555</li><li>666</li></ul></li><li>333<ul><li>444</li><li>555</li><li>666</li></ul></li></ul></a></li>
+            <li><a>Универсальные<ul><li>111<ul><li>444</li><li>555</li><li>666</li></ul></li><li>222<ul><li>444</li><li>555</li><li>666</li></ul></li><li>333<ul><li>444</li><li>555</li><li>666</li></ul></li></ul></a></li>
+            <li><a>Доставка и Оплата<ul><li>111<ul><li>444</li><li>555</li><li>666</li></ul></li><li>222<ul><li>444</li><li>555</li><li>666</li></ul></li><li>333<ul><li>444</li><li>555</li><li>666</li></ul></li></ul></a></li>
+            <li><a>Гарантия<ul><li>111<ul><li>444</li><li>555</li><li>666</li></ul></li><li>222<ul><li>444</li><li>555</li><li>666</li></ul></li><li>333<ul><li>444</li><li>555</li><li>666</li></ul></li></ul></a></li>
+            <li><a>О нас<ul><li>111<ul><li>444</li><li>555</li><li>666</li></ul></li><li>222<ul><li>444</li><li>555</li><li>666</li></ul></li><li>333<ul><li>444</li><li>555</li><li>666</li></ul></li></ul></a></li>
+            <li><a>Контакты<ul><li>111<ul><li>444</li><li>555</li><li>666</li></ul></li><li>222<ul><li>444</li><li>555</li><li>666</li></ul></li><li>333<ul><li>444</li><li>555</li><li>666</li></ul></li></ul></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="button_buy">Купить</button>
+
+    <div id="description">
+
+        <div id="description_img">
+            <div><img src="/img/comp.jpg"></div>
+            <div><img src="/img/comp1.jpg"></div>
+            <div><img src="/img/comp2.jpg"></div>
+        </div>
+        <div id="description_chars">
+            <h1>MacBook 12</h1>
+            <p id="description_chars-bolder">Характеристики:</p>
+            <p>Производитель процессора - Intel</p>
+            <p>Производитель чипсета видео - Intel</p>
+            <p>Тип процессора - Intel Core M</p>
+            <p>Предустановленная ОС - OS X EI CAPITAN</p>
+            <p>Поверхность экрана глянцевая</p>
+        </div>
+
+        <div id="description_main">
+            <p>Описание модели</p>
+            <p>Apple MacBook 12 - легкий, сверхкомпактный ноутбук с дисплеем Retina диагональю 12", мощным и очень
+                энергоэффективным процессором Intel Core M, скоростным SSD-накопителем, реагирующим на силу нажатия
+                трекпадом Force Touch и USB-C. Ёмкий аккумулятор позволяет работать до 10 часов без подзарядки. Трекпад
+                нового MacBook открывает перед вами совершенно новые возможности. Конструкция трекпада Force Touch
+                обеспечивает высокую чувствительность и стабильный отклик вне зависимости от того, в какой точке его
+                поверхности вы нажимаете. Практически всё, что вам может понадобиться от ноутбука, теперь можно делать
+                по беспроводной связи благодаря программному обеспечению Apple, которое задействует все возможности
+                современных стандартов Wi-Fi и Bluetooth.</p>
+        </div>
+    </div>
+
+    <div id="chars">
+        <div id="chars-left">
+            <p><b>Полные технические характеристики</b></p>
+            <p>Диагональ экрана<span>.....................</span><span>12</span></p>
+            <p>Разрешение экрана<span>..............</span><span>2304х1440</span></p>
+            <p>Модель процессора<span>.....</span><span>Intel Core m3 (1.1 ГГЦ)</span></p>
+            <p>Количество ядер<span>......................</span><span>2</span></p>
+            <p>Количество потоков<span>....................</span><span>4</span></p>
+            <p>Объем оперативной памяти<span>..........</span><span>8192 MB</span></p>
+
+            <p><b>Преимущества</b></p>
+            <ul>
+                <li>Тонкий и легкий алюминиевый корпус</li>
+                <li>Качественный Retina-экран</li>
+                <li>Отличный тачпад Force Touch</li>
+                <li>Отсутствие вентиляторов</li>
+            </ul>
+            <p><b>Apple Macbook</b> последнего поколения получил новейший процессор Intel серии M с тактовой частотой
+                1,1 ГГц. Благодаря низкому тепловыделению процессора разработчикам удалось обойтись без вентилятора и
+                создать особенно тонкий и лёгкий ноутбук.</p>
+            <p><b>ВЫСОКАЯ ПРОИЗВОДИТЕЛЬНОСТЬ</b><br>
+                Процессор обеспечивает высокое быстродействие при работе с ультрасовременными приложениями. При
+                повышении нагрузки можно воспользоваться функцией Turbo Boost, которая временно повышает тактовую
+                частоту, предотвращая появление задержек.</br>
+            <p><b>ВИДЕОПОВТОР</b><br>
+                Устройство поддерживает режим видеоповтора. В нём MacBook транслирует на внешний экран изображение с
+                разрешением 4K, а также сохраняет максимальное качество картинки на встроенном дисплее.</p>
+
+        </div>
+
+        <div id="chars-right">
+            <br><br>
+            <p>Чипсет видео<span>...........</span><span>Intel HD Graphics 515</span></p>
+            <p>Объем жесткого диска<span>............</span><span>SSD 256 ГБ</span></p>
+            <p>Тип аккумуляторов<span>........</span><span>Литий полимерный</span></p>
+            <p>Время работы от аккумуляторов<span>.....</span><span>до 10 часов</span></p>
+            <p>Вес<span>.............................</span><span>0.92 кг</span></p>
+            <br>
+            <p><b>НЕВЕРОЯТНОЕ КАЧЕСТВО ИЗОБРАЖЕНИЯ</b><br>
+                Обновлённый экран Retina получил IPS-матрицу, которая обеспечивает большие углы обзора, насыщенную
+                цветовую гамму и очень высокую контрастность. Она также позволяет добиться превосходной детализации
+                картинки за счёт разрешения 2304 ? 1440. Плотность размещения пикселей настолько высока, что человек не
+                в состоянии увидеть отдельные точки.</p>
+            <p><b>ОТЛИЧНАЯ АВТОНОМНОСТЬ</b><br>Apple MacBook можно использовать в качестве портативной рабочей станции,
+                не опасаясь быстрой разрядки батареи. Ёмкости аккумулятора хватает на 10 часов доступа к интернету через
+                беспроводную сеть или 11 часов просмотра видео. При полностью заряженной батарее девайс может провести
+                до 30 дней в режиме ожидания. </p>
+
+        </div>
+
+    </div>
+
+
+    <div id="recalls">
+
+        <h2>Отзывы</h2>
+        <p>
+            Анатолий 19.12.2015 &nbsp&nbsp<img src="/img/5stars.jpg"><br>
+            Спасибо за оперативную доставку! Мои рекомендации!
+        </p>
+        <p>
+            Мария Сысоева 1.11.2015 &nbsp&nbsp<img src="/img/5stars.jpg"><br>
+            Я стандартно не была удивлена стойкостью ноута к испытаниям! Ни царапин, ни глюков не появилось с момента
+            его использования.
+        </p>
+        <h2>Добавить отзыв</h2>
+
+        <form id="form_recall">
+            <input type="text" placeholder="Ваше имя">
+            <p><b>Ваша оценка:</b> <img src="/img/empty_star.jpg">&nbsp|&nbsp<img src="/img/empty_star2.jpg">&nbsp|&nbsp<img src="/img/empty_star3.jpg">&nbsp|&nbsp<img src="/img/empty_star4.jpg">&nbsp|&nbsp<img src="/img/empty_star5.jpg"></p>
+            <textarea rows="7" cols="140" placeholder="Ваш отзыв"></textarea><br><br>
+            <button type="submit">Добавить отзыв</button>
+        </form>
+    </div>
+
+
+    </body>
